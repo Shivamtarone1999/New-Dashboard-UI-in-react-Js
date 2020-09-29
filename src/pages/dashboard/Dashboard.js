@@ -26,6 +26,7 @@ import p3 from "../../images/people/p3.png";
 import p4 from "../../images/people/p4.png";
 import p5 from "../../images/userAvatar.png";
 import CategoryList from "../category/Category";
+import { TextField } from "@material-ui/core";
 
 // import BarChart from 'react-bar-chart';
 
@@ -408,6 +409,60 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className={s.root}>
+
+        {/* Box date */}
+
+        <Row>
+          <Col xl={12}>
+            <Widget
+              title={
+                <Row>
+                  <Col xs={12} sm={5}>
+                    <p style={{ fontWeight: 700, marginTop: 30 }}>Select Date</p>
+                  </Col>
+                  <Col xs={12} sm={7}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <div className="">
+                        <p style={{ fontWeight: 700 }}>From</p>
+                        <form noValidate>
+                          <TextField
+                            id="date"
+                            label="Date"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            InputLabelProps={{
+                              shrink: true,
+                            }}
+                          />
+                        </form>
+                      </div>
+                      <div className="">
+                        <p style={{ fontWeight: 700 }}>To</p>
+                        <form noValidate>
+                          <TextField
+                            id="date"
+                            label="Date"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            InputLabelProps={{
+                              shrink: true,
+                            }}
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              }
+
+            >
+            </Widget>
+          </Col>
+        </Row>
+
+
+        {/* Box date ends */}
+
         <Row>
           <Col xl={4}>
             <Widget
@@ -640,6 +695,58 @@ class Dashboard extends React.Component {
             </Widget>
           </Col>
         </Row>
+
+
+        <Row>
+          <Col xl={12}>
+            <Widget
+              title={
+                <Row>
+                  <Col xs={12} sm={5}>
+                    <p style={{ fontWeight: 700, marginTop: 30 }}>Select Date</p>
+                  </Col>
+                  <Col xs={12} sm={7}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <div className="">
+                        <p style={{ fontWeight: 700, }}>From</p>
+                        <form noValidate>
+                          <TextField
+                            id="date"
+                            label="Date"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            InputLabelProps={{
+                              shrink: true,
+                            }}
+                          />
+                        </form>
+                      </div>
+                      <div className="">
+                        <p style={{ fontWeight: 700, }}>To</p>
+                        <form noValidate>
+                          <TextField
+                            id="date"
+                            label="Date"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            InputLabelProps={{
+                              shrink: true,
+                            }}
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              }
+
+            >
+            </Widget>
+          </Col>
+        </Row>
+
+
+
         <Row>
           <Col xl={8}>
             <Widget

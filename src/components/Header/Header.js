@@ -216,12 +216,12 @@ class Header extends React.Component {
               style={{ marginLeft: 20 }}
             >
               {this.state.messagesOpen ? (
-                <img
+                {/* <img
                   src={lightMessages}
                   alt="notify"
                   width="24px"
                   height={"24px"}
-                />
+                /> */}
               ) : (
                   <>
                     {/* <img
@@ -236,12 +236,7 @@ class Header extends React.Component {
                   </>
                 )}
             </DropdownToggle>
-            <DropdownMenu
-              right
-              className={`${s.notificationsWrapper} py-0 animated animated-fast fadeInUp`}
-            >
-              <Notifications notificationsTabSelected={2} />
-            </DropdownMenu>
+
           </Dropdown>
           <Dropdown nav className={`${s.notificationsMenu}`} isOpen={this.state.accountOpen}
             toggle={this.toggleAccount}>
