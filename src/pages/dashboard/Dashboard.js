@@ -25,6 +25,7 @@ import p2 from "../../images/people/p2.png";
 import p3 from "../../images/people/p3.png";
 import p4 from "../../images/people/p4.png";
 import p5 from "../../images/userAvatar.png";
+import CategoryList from "../category/Category";
 
 // import BarChart from 'react-bar-chart';
 
@@ -703,7 +704,20 @@ class Dashboard extends React.Component {
           </Col>
         </Row>
 
-        {/* table 1 */}
+        {/* table 0 */}
+
+        <Row>
+          <Col sm={12}>
+            <Widget
+            >
+              {/* Publication List */}
+              <div className="Category">
+                <CategoryList />
+              </div>
+            </Widget>
+          </Col>
+        </Row>
+
 
         <Row>
           <Col sm={12}>
@@ -733,6 +747,8 @@ class Dashboard extends React.Component {
             </Widget>
           </Col>
         </Row>
+
+
 
         {/* table 2 */}
 

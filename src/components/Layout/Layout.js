@@ -23,6 +23,7 @@ import Notifications from "../../pages/notifications/Notifications";
 import Icons from "../../pages/icons";
 import Tables from "../../pages/tables";
 import Charts from "../../pages/charts";
+import Category from '../../pages/category';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -117,6 +118,7 @@ class Layout extends React.Component {
                       component={Dashboard}
                     />
                     <Route path={"/app/typography"} component={Typography} />
+                    <Route path={"/app/category"} component={Category} />
                     <Route path={"/app/tables"} component={Tables} />
                     <Route path={"/app/ui/maps"} component={Maps} />
                     <Route

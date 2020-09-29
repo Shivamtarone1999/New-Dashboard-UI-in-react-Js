@@ -94,6 +94,7 @@ class Sidebar extends React.Component {
           <hr />
           <h5 className={s.navTitle}>Other</h5>
           <ul className={s.nav}>
+
             <LinksGroup
               onActiveSidebarItemChange={activeItem =>
                 this.props.dispatch(changeActiveSidebarItem(activeItem))
@@ -104,8 +105,8 @@ class Sidebar extends React.Component {
               link="/app/tables"
               index="main"
             >
-
             </LinksGroup>
+
             <LinksGroup
               onActiveSidebarItemChange={activeItem =>
                 this.props.dispatch(changeActiveSidebarItem(activeItem))
@@ -116,7 +117,18 @@ class Sidebar extends React.Component {
               link="/app/typography"
               index="main"
             >
+            </LinksGroup>
 
+            <LinksGroup
+              onActiveSidebarItemChange={activeItem =>
+                this.props.dispatch(changeActiveSidebarItem(activeItem))
+              }
+              activeItem={this.props.activeItem}
+              header="Category List"
+              isHeader
+              link="/app/category"
+              index="main"
+            >
             </LinksGroup>
 
           </ul>

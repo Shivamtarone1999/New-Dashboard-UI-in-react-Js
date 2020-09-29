@@ -1,11 +1,14 @@
 {
+  "homepage": "https://Shivamtarone1999.github.io/New-Dashboard-UI-in-react-Js",
   "name": "one-react-template",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "PUBLIC_URL='./' node scripts/build.js",
     "start": "node scripts/start.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
@@ -65,6 +68,7 @@
     "echarts": "^4.4.0",
     "echarts-for-react": "^2.0.15-beta.1",
     "font-awesome": "4.7.0",
+    "gh-pages": "^3.1.0",
     "glyphicons-halflings": "^1.9.1",
     "line-awesome": "github:icons8/line-awesome",
     "material-ui": "^0.20.2",

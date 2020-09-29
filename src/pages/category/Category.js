@@ -85,10 +85,10 @@ function createData(name, calories, fat) {
 }
 
 const rows = [
-  createData('Publicaton 1', 305, 3.7),
-  createData('Publicaton 2', 452, 25.0),
-  createData('Publicaton 3', 262, 16.0),
-  createData('Publicaton 4', 262, 16.0),
+  createData('Category 1', 305, 3.7),
+  createData('Category 2', 452, 25.0),
+  createData('Category 3', 262, 16.0),
+  createData('Category 4', 262, 16.0),
 
 
 ];
@@ -100,7 +100,7 @@ const useStyles2 = makeStyles({
   },
 });
 
-export default function TablePublicationList() {
+export default function CategoryList() {
   const classes = useStyles2();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -117,7 +117,6 @@ export default function TablePublicationList() {
   };
 
   return (
-
     <>
       <h1>Category List</h1> <br />
 
